@@ -13,15 +13,15 @@ This project is a Flutter-based implementation of the Nuntium News App UI, provi
 
   
 
-•  **Modern UI/UX**: Recreates the sleek design of the Nuntium News App UI Kit.
+-  **Modern UI/UX**: Recreates the sleek design of the Nuntium News App UI Kit.
 
-•  **Latest News**: Fetches real-time news articles from the New York Times.
+-  **Latest News**: Fetches real-time news articles from the New York Times.
 
-•  **Multiple Categories**: Browse news across different sections like Technology, Sports, Business, and more.
+-  **Multiple Categories**: Browse news across different sections like Technology, Sports, Business, and more.
 
-•  **User Authentication**: Supports email/password, Google Sign-In, and Apple Sign-In authentication methods.
+-  **User Authentication**: Supports email/password, Google Sign-In, and Apple Sign-In authentication methods.
 
-•  **Personalized Experience**: Save favorite articles and customize your news feed.
+-  **Personalized Experience**: Save favorite articles and customize your news feed.
 
 **Getting Started**
 
@@ -29,13 +29,13 @@ This project is a Flutter-based implementation of the Nuntium News App UI, provi
 
 ## Prerequisites
 
-  •  **Flutter SDK**: Make sure you have Flutter installed on your machine. The application was tested on **Flutter (Channel stable, 3.24.3)**. [Install Flutter](https://flutter.dev/docs/get-started/install)
+  -  **Flutter SDK**: Make sure you have Flutter installed on your machine. The application was tested on **Flutter (Channel stable, 3.24.3)**. [Install Flutter](https://flutter.dev/docs/get-started/install)
 
-•  **Dart**: Dart comes bundled with Flutter.
+-  **Dart**: Dart comes bundled with Flutter.
 
-•  **IDE**: You can use any IDE you prefer, such as Android Studio, VS Code, or IntelliJ IDEA.
+-  **IDE**: You can use any IDE you prefer, such as Android Studio, VS Code, or IntelliJ IDEA.
 
-•  **New York Times API Key**: Sign up for a developer account to get your API key. [Get NYTimes API Key](https://developer.nytimes.com/)
+-  **New York Times API Key**: Sign up for a developer account to get your API key. [Get NYTimes API Key](https://developer.nytimes.com/)
 
 ## Installation steps
 1. **Install Dependencies** 
@@ -44,9 +44,9 @@ flutter pub get
 ```
 2.  **Configure API Keys**
 
-•  Create a .env file in the root directory.
+-  Create a .env file in the root directory.
 
-•  Add your New York Times API key:
+-  Add your New York Times API key:
 ```
 API_KEY=your_api_key
 
@@ -108,23 +108,23 @@ The project follows a clean architecture to maintain scalability and readability
 
   
 
-•  **lib**
-•  **core**: Contains common utilities, constants, themes, and configurations.
-•  **data**: Manages data retrieval from APIs and local databases.
-•  **domain**: Business logic and entities.
-•  **presentation**: UI components, screens, and widgets.
-•  **services**: Handles API services, authentication, and database interactions.
+-  **lib**
+-  **core**: Contains common utilities, constants, themes, and configurations.
+-  **data**: Manages data retrieval from APIs and local databases.
+-  **domain**: Business logic and entities.
+-  **presentation**: UI components, screens, and widgets.
+-  **services**: Handles API services, authentication, and database interactions.
 
 ## Dependencies
 
-•  **State Management**: flutter_bloc
-•  **Networking**: dio
-•  **Local Storage**: drift (formerly Moor)
-•  **Authentication**: firebase_auth, google_sign_in
-•  **JSON Serialization**: json_serializable
-•  **Dependency Injection**: get_it, injectable
-•  **Localization**: easy_localization
-•  **Routing**: auto_route
+-  **State Management**: flutter_bloc
+-  **Networking**: dio
+-  **Local Storage**: drift (formerly Moor)
+-  **Authentication**: firebase_auth, google_sign_in
+-  **JSON Serialization**: json_serializable
+-  **Dependency Injection**: get_it, injectable
+-  **Localization**: easy_localization
+-  **Routing**: auto_route
 
 ## Screenshots
 

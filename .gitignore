@@ -44,3 +44,13 @@ app.*.map.json
 
 # FVM Version Cache
 .fvm/
+# Flutter environment-specific files
+.env
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Firebase configuration (optional)
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
