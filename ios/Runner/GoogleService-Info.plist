@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>41978289999-tk4k7qd61fgp123oh6c93v7on6dpq9ie.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.41978289999-tk4k7qd61fgp123oh6c93v7on6dpq9ie</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD0XMdzb2azYhy-tf4UqdV_pe-aQi5bAOU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>41978289999</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.nuntium</string>
+	<key>PROJECT_ID</key>
+	<string>nuntium-7922c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nuntium-7922c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:41978289999:ios:b81fefc3252a8e4f6e6f3a</string>
+</dict>
+</plist>

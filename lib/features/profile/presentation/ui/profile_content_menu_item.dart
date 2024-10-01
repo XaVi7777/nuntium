@@ -1,0 +1,4 @@
+enum ProfileContentMenuItem {
+  language,
+  signOut,
+}
