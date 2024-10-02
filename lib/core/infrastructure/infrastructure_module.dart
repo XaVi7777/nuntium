@@ -3,7 +3,6 @@ import 'package:injectable/injectable.dart';
 import 'package:logger/logger.dart';
 import 'package:nuntium/app/app_environment.dart';
 import 'package:nuntium/app/config/app_log_level.dart';
-import 'package:nuntium/core/infrastructure/cancellable_request_manager.dart';
 import 'package:nuntium/core/infrastructure/dio_logger_wrapper.dart';
 import 'package:nuntium/core/infrastructure/error_handler/error_handler.dart';
 import 'package:nuntium/core/infrastructure/error_handler/error_handler_impl.dart';
@@ -46,13 +45,7 @@ abstract class InfrastructureModule {
   }
 
   @lazySingleton
-  CancelableRequestManagerFactory cancelableRequestManagerFactory() {
-    return CancelableRequestManagerFactory();
-  }
-
-  @lazySingleton
   ErrorHandler errorHandler(Logger logger) {
     return ErrorHandlerImpl(logger);
   }
-
 }

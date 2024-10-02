@@ -21,8 +21,6 @@ class SignUpBloc extends SrBloc<SignUpEvent, SignUpState, SignUpSR> {
     Emitter<SignUpState> emit,
   ) async {
     addSr(const SignUpSR.showLoader());
-    // ignore: avoid_print
-    print('submit');
     await _authInteractor.signUp(event.signInMethod, event.formData);
     addSr(const SignUpSR.hideLoader());
   }

@@ -21,14 +21,10 @@ class AuthServiceImpl implements AuthService {
     String email,
     String password,
   ) async {
-    // ignore: avoid_print
-    print('signUpWithPassword');
     final userCredential = await _firebaseAuth.createUserWithEmailAndPassword(
       email: email,
       password: password,
     );
-    // ignore: avoid_print
-    print('userCredential $userCredential');
     final user = userCredential.user;
 
     if (user != null) {

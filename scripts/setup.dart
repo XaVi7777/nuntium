@@ -1,5 +1,6 @@
 import 'compile_svg.dart';
 import 'generate_localization_keys.dart';
+import 'generate_splash_screen.dart';
 
 void main() {
   compileSvg(
@@ -8,4 +9,5 @@ void main() {
   );
 
   generateLocalizationKeys();
+  generateSplashScreen();
 }

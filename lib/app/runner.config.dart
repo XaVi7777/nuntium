@@ -32,7 +32,6 @@ import '../core/http/dio_client_creator.dart' as _i841;
 import '../core/http/dio_client_creator_impl.dart' as _i230;
 import '../core/http/dio_client_module.dart' as _i635;
 import '../core/http/link_provider.dart' as _i427;
-import '../core/infrastructure/cancellable_request_manager.dart' as _i500;
 import '../core/infrastructure/dio_logger_wrapper.dart' as _i675;
 import '../core/infrastructure/error_handler/error_handler.dart' as _i91;
 import '../core/infrastructure/infrastructure_module.dart' as _i407;
@@ -263,8 +262,6 @@ Future<_i174.GetIt> $initGetIt(
       () => permissionsModule.permissionsService());
   gh.lazySingleton<_i895.Connectivity>(
       () => infrastructureModule.connectivity());
-  gh.lazySingleton<_i500.CancelableRequestManagerFactory>(
-      () => infrastructureModule.cancelableRequestManagerFactory());
   gh.lazySingleton<_i535.NyTimesApiServiceConfig>(
       () => configModule.nyTimesApiServiceConfig);
   gh.lazySingleton<_i346.AuthStateManager>(() => _i346.AuthStateManager());

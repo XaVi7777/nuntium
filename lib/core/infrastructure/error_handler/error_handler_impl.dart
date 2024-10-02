@@ -1,4 +1,5 @@
 import 'package:dartz/dartz.dart';
+import 'package:dio/dio.dart';
 import 'package:drift/drift.dart';
 import 'package:drift/remote.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -22,14 +23,24 @@ class ErrorHandlerImpl implements ErrorHandler {
     } on DriftWrappedException catch (e) {
       _logger.e(e);
       return left(Failure.databaseFailure(e.toString()));
+    } on DioException catch (e) {
+      _logger.e(e);
+      if (e.type == DioExceptionType.cancel) {
+        return left(const Failure.requestCancelled('Request was cancelled'));
+      } else if (e.type == DioExceptionType.connectionTimeout ||
+          e.type == DioExceptionType.receiveTimeout) {
+        return left(const Failure.connectionFailure('Connection timed out'));
+      } else if (e.type == DioExceptionType.badResponse) {
+        return left(Failure.serverFailure('Server error: ${e.message}'));
+      } else {
+        return left(Failure.connectionFailure('Network error: ${e.message}'));
+      }
     } on FirebaseAuthException catch (e) {
-      // ignore: avoid_print
-      print('e $e');
       _logger.e(e);
       return left(Failure.firebaAuthFailure(e.code));
     } on Exception catch (e) {
       _logger.e(e);
-      return left(Failure.unknownFailure(e.toString()));
+      return left(Failure.unknownFailure('Unknown error: $e'));
     }
   }
 }

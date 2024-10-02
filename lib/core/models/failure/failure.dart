@@ -16,10 +16,6 @@ class Failure with _$Failure {
   const factory Failure.requestCancelled(String message) =
       RequestCancelledFailure;
 
-  factory Failure.requestCancelledWithDefault() {
-    return const Failure.requestCancelled('Request was cancelled');
-  }
-
   @override
   String get message;
 }
